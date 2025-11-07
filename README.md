@@ -80,7 +80,7 @@ The data is provided in both JSON (for web applications and APIs) and SQL (for d
 
 2. **Data Accuracy**
    - Geographic coordinates provided for mapping applications
-   - Village area measurements included for spatial analysis
+   - Village area measurements included for spatial analysis (note: verify hectare calculations as they may require recalculation)
    - Hierarchical relationships maintained between administrative levels
 
 3. **Format Options**
@@ -104,6 +104,7 @@ The data is provided in both JSON (for web applications and APIs) and SQL (for d
 ### Important Notes
 
 - The villages dataset includes geometric data (area and perimeter)
+- **Data Quality Note**: The `Hectares` field in villages.json appears to contain values that are 100x larger than expected based on standard conversion (1 hectare = 10,000 square meters). Users should verify and recalculate this field if precise area measurements are needed.
 - All geographic coordinates use standard decimal degree format
 - Province and district data includes hierarchical nesting for easy traversal
 - Village data is flattened for simpler querying and analysis
