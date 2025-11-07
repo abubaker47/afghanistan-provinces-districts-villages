@@ -96,10 +96,10 @@ The data is provided in both JSON (for web applications and APIs) and SQL (for d
    - Government and NGO planning tools
 
 5. **Data Relationships**
-   - Provinces contain multiple districts
-   - Districts span across provinces
+   - Each province contains multiple districts
+   - Each district belongs to exactly one province
    - Villages are associated with specific districts and provinces
-   - Some villages may have coverage across multiple administrative areas
+   - Clear hierarchical structure: Province → District → Village
 
 ### Important Notes
 
