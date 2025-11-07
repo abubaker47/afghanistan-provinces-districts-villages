@@ -4,7 +4,7 @@ A comprehensive dataset of Afghanistan's administrative divisions, including all
 
 ## 📊 Statistics
 
-- **Provinces**: 35
+- **Provinces**: 34
 - **Districts**: 492
 - **Villages**: 8,892
 - **Languages**: English, Dari (Farsi), Pashto
@@ -17,7 +17,7 @@ The repository contains two main JSON files:
 
 #### 1. `JSON/provinces-and-districts.json`
 - **Structure**: Hierarchical nested JSON
-- **Size**: ~35 provinces with nested districts
+- **Size**: ~34 provinces with nested districts
 - **Fields per Province**:
   - `id`: Unique identifier
   - `name`: Province name (English)
