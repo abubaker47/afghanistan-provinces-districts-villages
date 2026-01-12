@@ -13,7 +13,7 @@ A comprehensive dataset of Afghanistan's administrative divisions, including all
 ## 📁 File Information
 
 ### JSON Format
-The repository contains two main JSON files:
+The repository contains two main JSON files for administrative data:
 
 #### 1. `JSON/provinces-and-districts.json`
 - **Structure**: Hierarchical nested JSON
@@ -58,6 +58,42 @@ The repository includes SQL dump files for easy database import:
 
 **Database Format**: MySQL/MariaDB compatible SQL dumps (phpMyAdmin export)
 
+### GeoJSON Format
+The repository includes comprehensive geographic boundary data for mapping and GIS applications:
+
+#### `GEO-JSON/geoBoundaries-AFG-ADM0/`
+Afghanistan's administrative boundary (ADM0 - country level) in multiple GIS formats:
+
+- **GeoJSON Files**:
+  - `geoBoundaries-AFG-ADM0.geojson` - Full resolution boundary (~1.0 MB)
+  - `geoBoundaries-AFG-ADM0_simplified.geojson` - Simplified boundary (~235 KB)
+  - `geoBoundaries-AFG-ADM0.topojson` - TopoJSON format (~215 KB)
+  - `geoBoundaries-AFG-ADM0_simplified.topojson` - Simplified TopoJSON (~48 KB)
+
+- **Shapefile Components** (for GIS software like ArcGIS, QGIS):
+  - `.shp` - Geometry data
+  - `.shx` - Shape index
+  - `.dbf` - Attribute data
+  - `.prj` - Projection information
+
+- **Metadata & Attribution**:
+  - `geoBoundaries-AFG-ADM0-metaData.json` - Structured metadata
+  - `geoBoundaries-AFG-ADM0-metaData.txt` - Human-readable metadata
+  - `CITATION-AND-USE-geoBoundaries.txt` - Citation requirements
+  - `geoBoundaries-AFG-ADM0-PREVIEW.png` - Visual preview of boundary
+
+**Boundary Details**:
+- **Source**: geoBoundaries database (geoboundaries.org)
+- **Representative Year**: 2014
+- **Boundary Type**: ADM0 (Country level)
+- **License**: Public Domain
+- **Original Source**: ArcGIS Hub
+
+**Citation Requirement**: 
+When using the geoBoundaries data, you must provide attribution. Either:
+1. (Preferred) Cite: Runfola, D. et al. (2020) geoBoundaries: A global database of political administrative boundaries. PLoS ONE 15(4): e0231866. https://doi.org/10.1371/journal.pone.0231866
+2. Provide a link: "Administrative boundaries courtesy of geoBoundaries.org"
+
 ## 📝 Summary
 
 This dataset provides a complete administrative hierarchy of Afghanistan, from provinces down to individual villages. Each location includes:
@@ -67,7 +103,7 @@ This dataset provides a complete administrative hierarchy of Afghanistan, from p
 - **Spatial data**: Village area measurements and shape information
 - **Relational structure**: Clear province → district → village hierarchy
 
-The data is provided in both JSON (for web applications and APIs) and SQL (for database applications) formats, making it versatile for various use cases.
+The data is provided in three formats (JSON for web applications, SQL for databases, and GeoJSON for GIS/mapping), making it versatile for various use cases.
 
 ## 🔑 Details & Key Points
 
@@ -86,14 +122,17 @@ The data is provided in both JSON (for web applications and APIs) and SQL (for d
 3. **Format Options**
    - **JSON**: Ideal for web APIs, JavaScript applications, and modern frameworks
    - **SQL**: Ready for direct import into MySQL/MariaDB databases
-   - Both formats contain the same core data with appropriate structure
+   - **GeoJSON/Shapefiles**: Perfect for GIS applications, mapping libraries (Leaflet, Mapbox, Google Maps), and spatial analysis tools
+   - All formats contain complementary data for comprehensive coverage
 
 4. **Practical Applications**
-   - Geographic Information Systems (GIS)
+   - Geographic Information Systems (GIS) and mapping applications
    - Location-based services and applications
    - Administrative and demographic analysis
+   - Geospatial visualization and boundary mapping
    - Educational and research purposes
    - Government and NGO planning tools
+   - Spatial analysis and geographic modeling
 
 5. **Data Relationships**
    - Each province contains multiple districts
