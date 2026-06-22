@@ -110,7 +110,7 @@ INSERT INTO `districts` (`id`, `name`, `name_da`, `name_pa`, `latitude`, `longit
 (62, 'Khwaja Baha', 'خواجه بهاوالدین', 'خواجه بهاوالدین', 0, 0, 7, NULL, NULL, NULL, NULL),
 (63, 'Khwaja Ghar', 'خواجه غار', 'خواجه غار', 37.008715, 69.403914, 7, NULL, NULL, NULL, NULL),
 (64, 'Namak Ab', 'نمک آب', 'نمک آب', 36.431875, 69.69493, 7, NULL, NULL, NULL, NULL),
-(65, 'Rustaq', 'روستاق', 'روستاق', 37.110428, 69.836849, 7, NULL, NULL, NULL, NULL),
+(65, 'Rustaq', 'رستاق', 'رستاق', 37.110428, 69.836849, 7, NULL, NULL, NULL, NULL),
 (66, 'Taluqan', 'تالقان', 'تالقان', 36.742722, 69.523116, 7, NULL, NULL, NULL, NULL),
 (67, 'Warsaj', 'ورسج', 'ورسج', 36.104684, 70.158583, 7, NULL, NULL, NULL, NULL),
 (68, 'Yangi Qala', 'ینگی قلعه', 'ینگی قلعه', 37.455572, 69.660756, 7, NULL, NULL, NULL, NULL),
